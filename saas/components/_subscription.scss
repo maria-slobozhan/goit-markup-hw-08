@@ -1,0 +1,31 @@
+.subscription__field {
+  width: 352px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background-color: inherit;
+  color: var(--hero-text-color);
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:focus {
+    border: 1px solid var(--accent-color);
+    outline: var(--accent-color);
+  }
+
+  &::placeholder {
+    @include fonts(400, 16px, 1.25);
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.subscription__button {
+  display: inline-flex;
+}
+
+.subscription__icon {
+  margin-left: 10px;
+  align-items: center;
+}

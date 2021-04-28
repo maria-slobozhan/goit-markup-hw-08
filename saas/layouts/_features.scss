@@ -1,0 +1,39 @@
+.features {
+  padding-bottom: 0;
+}
+.features__list {
+  display: flex;
+}
+
+.features__logo {
+  @extend %flex;
+  width: inherit;
+  height: 120px;
+  margin-bottom: 30px;
+  background-color: var(--team-bg-color);
+}
+
+.features__icon {
+  width: 70px;
+  height: 70px;
+}
+
+.features__header {
+  margin-bottom: 10px;
+
+  @include fonts(700, 14px, 1.14);
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+
+.features__item {
+  width: 270px;
+
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
+.features__text {
+  margin-bottom: 0;
+}
