@@ -1,8 +1,50 @@
 .navigation {
   display: flex;
   align-items: center;
+  justify-content: space-between;
 
   &__logo {
     margin-right: 93px;
   }
 }
+
+.navigation__button {
+  position: absolute;
+  z-index: 100;
+  top: 10px;
+  right: 15px;
+  display: inline-block;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+
+  &:hover,
+  &:focus .navigation__icon {
+    fill: var(--accent-color);
+  }
+}
+
+.navigation__icon-cross {
+  display: none;
+
+  .navigation__button.is-open & {
+    display: block;
+  }
+}
+
+.navigation__button.is-open .navigation__icon-menu {
+  display: none;
+}
+
+.navigation__socials {
+  display: flex;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+// position: absolute;
+// top: 0;
+// right: 0;

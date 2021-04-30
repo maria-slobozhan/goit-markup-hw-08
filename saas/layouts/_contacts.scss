@@ -1,5 +1,7 @@
 .contacts {
-  display: flex;
+  @media screen and (min-width: 1200px) {
+    display: flex;
+  }
 }
 
 .contacts__item:not(:last-child) {

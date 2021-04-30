@@ -1,10 +1,5 @@
 .header {
+  position: relative;
   border-bottom: 1px solid #ececec;
   background-color: var(--hero-text-color);
-}
-
-.header__content {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
