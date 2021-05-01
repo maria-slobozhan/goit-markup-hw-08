@@ -3,9 +3,9 @@
   align-items: center;
   justify-content: space-between;
 
-  &__logo {
-    margin-right: 93px;
-  }
+  // &__logo {
+  //   margin-right: 93px;
+  // }
 }
 
 .navigation__button {
@@ -18,6 +18,10 @@
   padding: 0;
   border: none;
   background-color: transparent;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 
   &:hover,
   &:focus .navigation__icon {
