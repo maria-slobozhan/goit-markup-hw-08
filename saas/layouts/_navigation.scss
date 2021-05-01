@@ -2,10 +2,6 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-
-  // &__logo {
-  //   margin-right: 93px;
-  // }
 }
 
 .navigation__button {
@@ -49,6 +45,20 @@
   }
 }
 
-// position: absolute;
-// top: 0;
-// right: 0;
+.navigation__social-item {
+  position: relative;
+  margin-right: 20px;
+  @include fonts(500, 18px, 1.22, 0.02em);
+  color: var(--accent-color);
+
+  &:not(:first-child)::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -10px;
+    display: block;
+    width: 1px;
+    height: 22px;
+    background-color: rgba(33, 33, 33, 0.2);
+  }
+}

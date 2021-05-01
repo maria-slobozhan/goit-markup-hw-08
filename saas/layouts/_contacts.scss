@@ -10,8 +10,14 @@
     flex-direction: column;
     justify-content: center;
   }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
 .contacts__item {
+  display: block;
   @include fonts(500, 24px, 1.17, 0.02em);
   fill: var(--main-text-color);
 
@@ -25,6 +31,10 @@
 
   @media screen and(min-width:1200px) {
     @include fonts(500, 14px, 1.14, 0.02em);
+
+    &:not(:last-child) {
+      margin-right: 50px;
+    }
   }
 }
 
@@ -33,10 +43,6 @@
     margin-bottom: 32px;
     @include fonts(500, 34px, 1.18, 0.02em);
     color: var(--accent-color);
-  }
-
-  @media screen and(min-width:1200px) {
-    margin-right: 50px;
   }
 }
 
