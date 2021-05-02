@@ -1,7 +1,5 @@
 .logo {
   display: block;
-  padding-top: 16px;
-  padding-bottom: 16px;
   font-family: var(--logo-font);
   @include fonts(700, 24px, 1.17);
   color: var(--accent-color);
@@ -21,6 +19,11 @@
 }
 
 .navigation__logo {
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+
   @media screen and (min-width: 768px) {
     margin-right: 88px;
   }
