@@ -1,3 +1,10 @@
+// *,
+// ::after,
+// ::before {
+//   box-sizing: inherit;
+//   outline: 2px solid red;
+// }
+
 body {
   font-family: var(--main-font);
   @include fonts();
