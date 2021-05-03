@@ -791,7 +791,7 @@ img {
   border-radius: 3px;
 }
 
-@media screen and (min-width: 480px) {
+@media screen and (min-width: 450px) {
   .checkbox__label::after {
     top: 50%;
   }
