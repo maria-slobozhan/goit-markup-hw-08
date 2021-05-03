@@ -769,6 +769,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .checkbox__label {
+    margin-left: 30px;
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
@@ -779,7 +780,7 @@ img {
 .checkbox__label::after {
   content: '';
   position: absolute;
-  top: 50%;
+  top: 25%;
   left: 1px;
   transform: translateY(-50%);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -788,6 +789,12 @@ img {
   height: 15px;
   border: 2px solid var(--title-color);
   border-radius: 3px;
+}
+
+@media screen and (min-width: 480px) {
+  .checkbox__label::after {
+    top: 50%;
+  }
 }
 
 @media screen and (min-width: 1200px) {
