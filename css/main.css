@@ -501,8 +501,7 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: start;
-  margin-top: 60px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .filter__item:not(:last-child) {
@@ -517,8 +516,7 @@ img {
 
 @media screen and (min-width: 1200px) {
   .filter {
-    margin-top: 93px;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 }
 
@@ -824,11 +822,13 @@ img {
 
 .section {
   padding-bottom: 60px;
+  padding-top: 60px;
 }
 
 @media screen and (min-width: 1200px) {
   .section {
     padding-bottom: 94px;
+    padding-top: 94px;
   }
 }
 
@@ -1020,6 +1020,11 @@ img {
   }
 }
 
+.hero {
+  padding-bottom: 0;
+  padding-top: 0;
+}
+
 .hero__container {
   display: flex;
   align-items: center;
@@ -1038,7 +1043,6 @@ img {
 
 @media screen and (min-width: 481px) {
   .hero__container {
-    max-width: 767px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/header-tablet@1x.jpg);
   }
 }
@@ -1051,8 +1055,6 @@ img {
 
 @media screen and (min-width: 768px) {
   .hero__container {
-    max-width: 1199px;
-    height: 600px;
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/header/header-desktop@1x.jpg);
   }
 }
@@ -1170,6 +1172,10 @@ img {
   margin-bottom: 0;
 }
 
+.directions {
+  padding-top: 0;
+}
+
 @media screen and (max-width: 1199px) {
   .directions {
     display: none;
@@ -1205,13 +1211,6 @@ img {
 
 .team-section {
   background-color: var(--team-bg-color);
-  padding-top: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .team-section {
-    padding-top: 94px;
-  }
 }
 
 .team-grid {
@@ -1259,16 +1258,6 @@ img {
   line-height: 1.19;
   letter-spacing: 0.03em;
   color: var(--title-color);
-}
-
-.clients {
-  padding-top: 60px;
-}
-
-@media screen and (min-width: 1200px) {
-  .clients {
-    padding-top: 94px;
-  }
 }
 
 .clients__list {
@@ -1337,7 +1326,6 @@ img {
 @media screen and (min-width: 1200px) {
   .portfolio__item {
     flex-basis: calc((100% - 3 * 30px) / 3);
-    text-align: center;
   }
 }
 
@@ -1438,6 +1426,7 @@ img {
   .footer__block {
     flex-basis: calc((50% - 45px) / 2);
     text-align: start;
+    padding-bottom: 60px;
   }
   .footer__block:not(:first-child) {
     padding-top: 72px;

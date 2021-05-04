@@ -34,6 +34,7 @@
   @media screen and (min-width: 1200px) {
     flex-basis: calc((50% - 45px) / 2);
     text-align: start;
+    padding-bottom: 60px;
 
     &:not(:first-child) {
       padding-top: 72px;
